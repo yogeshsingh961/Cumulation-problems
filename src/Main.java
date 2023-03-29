@@ -4,6 +4,7 @@ import java.util.Scanner;
 //public class Main {
 //    // Anagram problem
 //    public static void main(String[] args) {
+//        //taking user imput
 //        Scanner sc= new Scanner(System.in);
 //        String s= sc.next();
 //        String t= sc.next();
@@ -12,18 +13,22 @@ import java.util.Scanner;
 //
 //    }
 //    static boolean checkAnagram(String s, String t){
+//        //to be anagram length should be same
 //        if(s.length()!=t.length()) return false;
 //
-//        int[]freq= new int[26];
+//        int[]freq= new int[26];// freq array stores count of characters in string
 //
-//        for(int i=0; i<s.length(); i++){
+//        // increasing characters of 1st string
+//        for(int i=0; i<s.length(); i++){ //
 //            char c=s.charAt(i);
 //            freq[c-'a']++;
 //        }
+//         // decreasing characters if present in second string
 //        for(int i=0; i<t.length(); i++){
 //            char ch=t.charAt(i);
 //            freq[ch-'a']--;
 //        }
+//        // if freq array has non-zero value then not an anagram
 //        for(int i=0; i<26; i++){
 //            if(freq[i]!=0) return false;
 //
@@ -35,7 +40,7 @@ import java.util.Scanner;
 //**********************Bubble sort to sort the array**************************
 
 //public class Main {
-//    // Anagram problem
+
 //    public static void main(String[] args) {
 //        Scanner sc= new Scanner(System.in);
 //        int n=sc.nextInt();
@@ -51,7 +56,7 @@ import java.util.Scanner;
 //        int n=arr.length;
 //        for(int i=0; i<n; i++){ // i need n pass
 //            int flag=0;
-//            for(int j=0; j<n-1-i; j++){
+//            for(int j=0; j<n-1-i; j++){ //because
 //                if(arr[j]>arr[j+1]){
 //                    flag=1;
 //                    int temp=arr[j];
@@ -64,9 +69,9 @@ import java.util.Scanner;
 //    }
 //}
 
-
+// ************************* swapping even odd positions in array**********************
 public class Main {
-    // Anagram problem
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
